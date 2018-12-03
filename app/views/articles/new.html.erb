@@ -1,0 +1,11 @@
+<h1>商品登録フォーム</h1>
+<%= form_with model: @item, local: true do |form| %>
+  <p>
+    タイトル：<br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    本文：<br>
+    <%= form.text_area :body %>
+  </p>
+<% end %>
