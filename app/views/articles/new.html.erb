@@ -1,5 +1,5 @@
-<h1>商品登録フォーム</h1>
-<%= form_with model: @item, local: true do |form| %>
+<h1>論文登録フォーム</h1>
+<%= form_with model: @article, local: true do |form| %>
   <p>
     タイトル：<br>
     <%= form.text_field :title %>
@@ -8,4 +8,5 @@
     本文：<br>
     <%= form.text_area :body %>
   </p>
+  <%= form.submit "登録" %>
 <% end %>
