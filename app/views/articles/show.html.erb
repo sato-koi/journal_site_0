@@ -13,3 +13,7 @@
 <p>
     <%= link_to "論文へ戻る", articles_path %>
 </p>
+
+<p>
+    <%= link_to "削除", article_path(@article), method: :delete, data: {confirm: '削除してよろしいですか？'} %>
+</p>
